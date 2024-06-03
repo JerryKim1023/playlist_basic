@@ -32,8 +32,13 @@ def playlist_post():
     # 여기에 코딩을 해서 meta tag를 먼저 가져와보겠습니다. 크롤링 기본코드
     image = soup.select_one('meta[property="og:image"]')['content']
     title = soup.select_one('meta[property="og:title"]')['content']
-    
+
+    play_list = list(db.movies.find({}, {'_id': False}))
+    count = len(play_list) + 1
+
     doc = {
+        
+        'num':count, # 저장된 숫자를 기록하게 만듦
         'title':title,
         'image':image,
         
