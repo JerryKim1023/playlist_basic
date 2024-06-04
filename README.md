@@ -1,6 +1,8 @@
 # playlist
 save my playlist on web
 
+python -m venv list_venv
+
 - 터미널에서 가상환경 실행
 list_venv\Scripts\activate.bat
 가상환경 이름을 먼저 쳐서 가상환경 실행

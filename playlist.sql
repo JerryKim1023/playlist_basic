@@ -1,0 +1,8 @@
+CREATE TABLE movies (
+    num INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    url VARCHAR(255) NOT NULL,
+    job VARCHAR(255) NOT NULL,
+    comment TEXT NOT NULL
+);
